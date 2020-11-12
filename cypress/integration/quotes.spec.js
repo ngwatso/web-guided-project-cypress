@@ -7,6 +7,8 @@ describe("Quotes app", () => {
 
   const textInput = () => cy.get('input[name="text"]');
   const authorInput = () => cy.get('input[name="author"]');
+  const submitButton = () => cy.get("#submitBtn");
+  const cancelButton = () => cy.get("#cancelBtn");
 
   // here go our tests
   // 'it' is a test
