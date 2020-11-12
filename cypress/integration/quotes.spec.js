@@ -88,6 +88,6 @@ describe("Quotes app", () => {
     // that 'have fun' is not in the DOM
     // create quote "have fun (Rhiannon)"
     // assert that "have fun (Rhiannon)" is in the DOM
-    cy.contains("have fun (Rhiannon)");
+    cy.contains("have fun (Rhiannon)").should("not.exist");
   });
 });
