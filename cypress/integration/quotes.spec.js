@@ -75,5 +75,7 @@ describe("Quotes app", () => {
     textInput().clear();
   });
 
-  it("can cancel a new quote", () => {});
+  it("can cancel a new quote", () => {
+    // should('have.value', '')
+  });
 });
