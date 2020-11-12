@@ -55,5 +55,11 @@ describe("Quotes app", () => {
     // syntax you will need:
     // "be.disabled"
     // .clear()
+    //The value of the inputs should be ""
+    //The submit button should be disabled
+    //Input "Philosophy is the cave man way" into text input
+    //Assert submit button should be disabled
+    //Input "Grok" into author input
+    //Assert Submit is not disabled
   });
 });
