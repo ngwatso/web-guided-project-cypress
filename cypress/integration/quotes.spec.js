@@ -83,4 +83,11 @@ describe("Quotes app", () => {
     authorInput().should("have.value", "");
     submitButton().should("be.disabled");
   });
+
+  it("can submit a new quote", () => {
+    // that 'have fun' is not in the DOM
+    // create quote "have fun (Rhiannon)"
+    // assert that "have fun (Rhiannon)" is in the DOM
+    cy.contains("have fun (Rhiannon)");
+  });
 });
