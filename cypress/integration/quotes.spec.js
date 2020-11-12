@@ -31,5 +31,6 @@ describe("Quotes app", () => {
     // assert they are empty
     // type in them
     // assert that the thing we typed is there
+    cy.get('input[name="text"]').should("have.value", "");
   });
 });
