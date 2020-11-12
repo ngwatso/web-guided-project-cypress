@@ -52,5 +52,8 @@ describe("Quotes app", () => {
     // set up, making sure that initial state is legit
     // act (type or click - mimicking user input)
     // assert that the action had the expected effect
+    // syntax you will need:
+    // "be.disabled"
+    // .clear()
   });
 });
