@@ -55,6 +55,7 @@ describe("Quotes app", () => {
     // syntax you will need:
     // "be.disabled"
     // .clear()
+
     //The submit button should be disabled
     //The value of the inputs should be ""
     //The submit button should be disabled
@@ -67,6 +68,7 @@ describe("Quotes app", () => {
     textInput().should("have.value", "");
     authorInput().should("have.value", "");
     submitButton().should("be.disabled");
+    textInput().clear();
     textInput().type("Not all those who wander are lost.");
     submitButton().should("be.disabled");
     authorInput().type("J. R. R. Tolkien");
