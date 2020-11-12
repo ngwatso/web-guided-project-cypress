@@ -12,6 +12,6 @@ describe("Quotes app", () => {
     // assertions live inside the 'it' statement
     // assertions should be logically grouped together
     expect(1 + 2).to.equal(3);
-    expect(2 + 2).to.equal(5);
+    expect(2 + 2).not.to.equal(5);
   });
 });
