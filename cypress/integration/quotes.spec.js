@@ -88,6 +88,16 @@ describe("Quotes app", () => {
     // that 'have fun' is not in the DOM
     // create quote "have fun (Rhiannon)"
     // assert that "have fun (Rhiannon)" is in the DOM
-    cy.contains("have fun (Rhiannon)").should("not.exist");
+    cy.contains(
+      "Cave men must first learn the principle of Geometry before they can learn the principle of philosophy. (Grok)"
+    ).should("not.exist");
+    textInput().type(
+      "Cave men must first learn the principle of Geometry before they can learn the principle of philosophy."
+    );
+    authorInput().type("Grok");
+    submitBtn().click();
+    cy.contains(
+      "Cave men must first learn the principle of Geometry before they can learn the principle of philosophy. (Grok)"
+    ).should("exist");
   });
 });
