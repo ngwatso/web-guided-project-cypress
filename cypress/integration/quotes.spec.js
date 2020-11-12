@@ -16,6 +16,6 @@ describe("Quotes app", () => {
   });
 
   it("playing around selecting elements from the DOM", () => {
-    cy.get();
+    cy.get('input[name="text]');
   });
 });
