@@ -47,4 +47,10 @@ describe("Quotes app", () => {
       .type("J. R. R. Tolkien")
       .should("have.value", "J. R. R. Tolkien");
   });
+
+  it("submit button disabled until both inputs filled out", () => {
+    // set up, making sure that initial state is legit
+    // act (type or click - mimicking user input)
+    // assert that the action had the expected effect
+  });
 });
