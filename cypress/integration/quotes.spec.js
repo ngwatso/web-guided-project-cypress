@@ -4,6 +4,8 @@ describe("Quotes app", () => {
     // arbitrary code you want running before your tests start: setup
     cy.visit("http://localhost:1234");
   });
+
+  const textInput = () => cy.get('input[name="text"]');
   // here go our tests
   // 'it' is a test
   it("sanity test to make sure tests work", () => {
