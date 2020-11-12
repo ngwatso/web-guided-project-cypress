@@ -25,4 +25,11 @@ describe("Quotes app", () => {
     cy.contains("Submit Quote");
     cy.contains(/submit quote/i);
   });
+
+  it("can type in the inputs", () => {
+    // grab the inputs
+    // assert they are empty
+    // type in them
+    // assert that the thing we typed is there
+  });
 });
