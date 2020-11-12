@@ -6,6 +6,8 @@ describe("Quotes app", () => {
   });
 
   const textInput = () => cy.get('input[name="text"]');
+  const authorInput = () => cy.get('input[name="author"]');
+
   // here go our tests
   // 'it' is a test
   it("sanity test to make sure tests work", () => {
@@ -18,7 +20,7 @@ describe("Quotes app", () => {
   });
 
   it("the proper elements are showing on the screen", () => {
-    cy.get('input[name="text"]').should("exist");
+    textInput().should("exist");
     cy.get('input[name="xxxxx"]').should("not.exist");
     cy.get('input[name="author"]').should("exist");
     cy.get("#submitBtn").should("exist");
