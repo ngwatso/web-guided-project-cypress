@@ -22,7 +22,7 @@ describe("Quotes app", () => {
   it("the proper elements are showing on the screen", () => {
     textInput().should("exist");
     cy.get('input[name="xxxxx"]').should("not.exist");
-    cy.get('input[name="author"]').should("exist");
+    authorInput().should("exist");
     cy.get("#submitBtn").should("exist");
     cy.get("#cancelBtn").should("exist");
 
