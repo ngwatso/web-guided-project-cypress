@@ -76,6 +76,11 @@ describe("Quotes app", () => {
   });
 
   it("can cancel a new quote", () => {
-    // should('have.value', '')
+    textInput().type("TEXT INPUT");
+    authorInput().type("AUTHOR INPUT");
+    cancelButton().click();
+    textInput().should("have.value", "");
+    authorInput().should("have.value", "");
+    submitButton().should("be.disabled");
   });
 });
