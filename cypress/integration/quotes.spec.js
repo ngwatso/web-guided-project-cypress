@@ -68,9 +68,9 @@ describe("Quotes app", () => {
     textInput().should("have.value", "");
     authorInput().should("have.value", "");
     submitButton().should("be.disabled");
-    textInput().clear();
     textInput().type("Not all those who wander are lost.");
     submitButton().should("be.disabled");
+    textInput().clear();
     authorInput().type("J. R. R. Tolkien");
     submitButton().should("be.not.disabled");
   });
