@@ -74,4 +74,6 @@ describe("Quotes app", () => {
     submitButton().should("be.not.disabled");
     textInput().clear();
   });
+
+  it("can cancel a new quote", () => {});
 });
