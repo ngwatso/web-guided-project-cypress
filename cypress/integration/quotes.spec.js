@@ -84,15 +84,14 @@ describe("Quotes app", () => {
     submitButton().should("be.disabled");
   });
 
+  // that 'have fun' is not in the DOM
+  // create quote "have fun (Rhiannon)"
+  // assert that "have fun (Rhiannon)" is in the DOM
   it("can submit a new quote", () => {
-    // that 'have fun' is not in the DOM
-    // create quote "have fun (Rhiannon)"
-    // assert that "have fun (Rhiannon)" is in the DOM
-    it("can submit a new quote", () => {
-        cy.contains("A new quote. (A new author)").should("not.exist");
-        textInput().type("A new quote.");
-        authorInput().type("A new author");
-        submitButton().click();
-        cy.contains("A new quote. (A new author)").should("exist");
-    });
+    cy.contains("A new quote. (A new author)").should("not.exist");
+    textInput().type("A new quote.");
+    authorInput().type("A new author");
+    submitButton().click();
+    cy.contains("A new quote. (A new author)").should("exist");
+  });
 });
