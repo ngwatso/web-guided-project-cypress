@@ -67,10 +67,7 @@ describe("Quotes app", () => {
     textInput().should("have.value", "");
     authorInput().should("have.value", "");
     submitButton().should("be.disabled");
-    textInput()
-      .should("have.value", "")
-      .type("Not all those who wander are lost.")
-      .should("have.value", "Not all those who wander are lost.");
+    textInput().type("Not all those who wander are lost.");
     submitButton().should("be.disabled");
     authorInput()
       .should("have.value", "")
